@@ -124,6 +124,9 @@ get_status_led() {
 	omni-emb-hpm)
 		status_led="emb:green:status"
 		;;
+	openqcam-ij3b)
+		status_led="openqcam-ij3b:red:power"
+		;;
 	pbr-m1)
 		status_led="pbr-m1:green:sys"
 		;;
