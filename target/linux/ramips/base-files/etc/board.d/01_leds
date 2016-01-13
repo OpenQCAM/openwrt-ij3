@@ -175,6 +175,10 @@ case $board in
 		set_wifi_led "miniplug:green:wlan"
 		set_usb_led "miniplug:green:mobile"
 		;;
+	openqcam-ij3b)
+		ucidef_set_led_default "power" "power" "openqcam-ij3b:red:power" "1"
+		set_wifi_led "openqcam-ij3b:green:wifi"
+		;;
 	px4885)
 		set_wifi_led "7links:orange:wifi"
 		set_usb_led "7links:blue:storage"

@@ -253,7 +253,7 @@ ramips_board_detect() {
 	*"OLinuXino-RT5350F-EVB")
 		name="olinuxino-rt5350f-evb"
 		;;
-	*"OpenQCam IJ3B")
+	*"OpenQCam-IJ3B board")
 		name="openqcam-ij3b"
 		;;
 	*"PBR-M1")
