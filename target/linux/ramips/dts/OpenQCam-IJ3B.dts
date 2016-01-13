@@ -13,9 +13,9 @@
 			m25p80@0 {
 				#address-cells = <1>;
 				#size-cells = <1>;
-				compatible = "en25q64";
+				compatible = "mx25l25635e";
 				reg = <0 0>;
-				linux,modalias = "m25p80", "en25q64";
+				linux,modalias = "m25p80", "mx25l25635e";
 				spi-max-frequency = <10000000>;
 
 				partition@0 {
@@ -33,7 +33,7 @@
 				factory: partition@40000 {
 					label = "factory";
 					reg = <0x40000 0x10000>;
-					read-only;
+					#read-only;
 				};
 
 				partition@50000 {
@@ -116,6 +116,10 @@
 			linux,code = <0x101>;
 		};
 	};
+
+	wmac@10180000{
+                ralink,mtd-eeprom = <&factory 0>;
+        };
 
 	ehci@101c0000 {
 		status = "okay";
